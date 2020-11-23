@@ -14,3 +14,16 @@ from fibonacci.fibonacci import fib
 )
 def test_fib_0_is_0_edge_case(fib_index, result):
     assert fib(fib_index) == result
+
+
+@pytest.mark.slow
+@pytest.mark.parametrize(
+    'fib_index, result',
+    [
+        (35, 9227465),
+        (38, 39088169),
+        (40, 102334155)
+    ]
+)
+def test_fibonacci_larger_indexes(fib_index, result):
+    assert fib(fib_index) == result
