@@ -1,0 +1,6 @@
+[run]
+omit =
+    test_*.py
+
+[report]
+skip_empty = true
