@@ -1,6 +1,6 @@
 # fib-pytest
 ## This is a simple example on how to use:
-* pytest mark paramtrize
+* pytest mark parametrize
 * custom mark for marking slow tests
 * how to add custom marker to pytest.ini
 * how to configure .coveragerc to not include empty files and omit test files for generating coverage report
@@ -16,7 +16,9 @@
 For linux users:    
 **`make`**  
 Will create new virtualenv and install pytest and pytest-cov.    
-Otherwise use standard steps create new python virtual env and install requirements.txt
+Otherwise use standard steps:
+* create new python virtual env ``python -m venv .venv``
+* install requirements.txt   ``pip install -r requirements.txt``
 
 ## Usage
 * Run fast tests:   
